@@ -21,7 +21,9 @@ public class CorsConfig {
             "http://localhost:*",
             "http://127.0.0.1:*",
             "http://[::1]:*",
-            "http://*:4200"
+            "http://*:4200",
+            "https://*.amplifyapp.com",  // AWS Amplify default domain pattern
+            "https://main.d20avnkha3gw9q.amplifyapp.com"  // Your specific Amplify domain
         ));
 
         // Allow all HTTP methods
